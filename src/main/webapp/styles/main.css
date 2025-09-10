@@ -1,6 +1,6 @@
 /* Toàn bộ trang */
 body { 
-    font-family: "Segoe UI", sans-serif;
+    font-family: "Segoe UI", Arial, sans-serif;
     font-size: 90%;
     margin: 0;
     padding: 0;
@@ -16,6 +16,7 @@ form {
     max-width: 500px;
     margin: 3em auto;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: left; /* Căn trái nội dung bên trong form */
 }
 
 /* Tiêu đề */
@@ -23,7 +24,7 @@ h1 {
     font-size: 180%;
     color: #20B2AA;
     margin-bottom: .5em;    
-    text-align: center;
+    text-align: center; /* Chỉ h1 căn giữa */
     text-transform: uppercase;
 }
 
@@ -32,7 +33,7 @@ h2 {
     color: #20B2AA;
     margin-top: 1em;
     margin-bottom: .5em;
-    text-align: center;
+    text-align: left; /* Căn trái h2 */
 }
 
 /* Form label và input */
@@ -131,5 +132,5 @@ th, td {
 .message {
     color: #d9534f;
     font-style: italic;
-    text-align: center;
+    text-align: left; /* Căn trái thông báo */
 }
