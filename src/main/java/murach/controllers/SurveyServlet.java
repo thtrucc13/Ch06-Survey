@@ -15,6 +15,10 @@ public class SurveyServlet extends HttpServlet {
             HttpServletResponse response)
             throws ServletException, IOException {
         
+        // Fix Unicode: thêm 2 dòng này
+        request.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html;charset=UTF-8");
+
         // get parameters from the request
         String firstName = request.getParameter("firstName");
         String lastName = request.getParameter("lastName");
@@ -23,7 +27,7 @@ public class SurveyServlet extends HttpServlet {
         String wantsUpdates = request.getParameter("wantsUpdates");
         String contactVia = request.getParameter("contactVia");
         
-        // process paramters
+        // process parameters
         if (heardFrom == null) {
             heardFrom = "NA";
         }
